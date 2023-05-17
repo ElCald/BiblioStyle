@@ -1,0 +1,370 @@
+/* --BiblioStyle--
+    Custom css library.
+
+    By: ElCald
+    
+    Version: 1.0
+    Update: 18/05/2023
+*/
+
+/* Couleurs */
+:root{
+    --color-light-light:rgb(247, 243, 239);
+    --color-dark-light:rgb(206, 197, 185);
+
+    --color-light-dark:rgb(131, 125, 123);
+    --color-dark-dark:rgb(29, 27, 27);
+
+    --color-light-iris: rgb(68, 92, 173);
+    --color-dark-iris: rgb(44, 58, 105);
+
+    --color-light-lily:rgb(233, 228, 218);
+    --color-dark-lily:rgb(223, 214, 195);
+
+    --color-light-rose:rgb(173, 32, 32);
+    --color-dark-rose:rgb(83, 17, 17);
+
+    --color-light-daffodil:rgb(255, 217, 0);
+    --color-dark-daffodil:rgb(247, 177, 27);
+
+    --color-light-daisy:rgb(207, 72, 235);
+    --color-dark-daisy:rgb(185, 27, 247);
+
+    --color-light-cactus:rgb(72, 235, 86);
+    --color-dark-cactus:rgb(23, 185, 31);
+
+    --color-striped:rgba(146, 146, 146, 0.322);
+    --color-hover:rgba(70, 70, 70, 0.5);
+    --color-head:rgba(53, 16, 16, 0.438);
+}
+
+/* Tailles */
+:root{
+    --size-font-xs:10px;
+    --size-font-sm:12px;
+    --size-font-md:14px;
+    --size-font-lg:16px;
+    --size-font-xl:20px;
+    --size-font-xxl:28px;
+
+
+    --size-xxxs-wd:1%;
+    --size-xxxs-he:1px;
+
+    --size-xxs-wd:5%;
+    --size-xxs-he:5px;
+
+    --size-xs-wd:10%;
+    --size-xs-he:10px;
+
+    --size-sm-wd:20%;
+    --size-sm-he:20px;
+
+    --size-md-wd:30%;
+    --size-md-he:30px;
+
+    --size-lg-wd:40%;
+    --size-lg-he:40px;
+
+    --size-xl-wd:50%;
+    --size-xl-he:50px;
+
+    --size-xxl-wd:100%;
+    --size-xxl-he:50px;
+}
+
+/* général */
+button, p, div, span{
+    font-family: "Lucida Sans";
+    font-size: var(--size-font-md);
+}
+
+.bs-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* position */
+
+.bs-left{
+    float: left;
+}
+
+.bs-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bs-right{
+    float: right;
+}
+
+.bs-middle{
+    margin: auto;
+}
+
+
+
+/* Boutons */
+.bs-button{
+    border-radius: 5px;
+    padding: 15px 45px;
+    font-size: var(--size-font-lg);
+    border:0px solid #00000000;
+}
+
+.bs-button:active{
+    position:relative;
+    top:1px;
+}
+
+.bs-btn-border{
+    border:1px solid #cababa;
+}
+
+
+.bs-btn-xs{
+    padding: 2px 6px;
+}
+
+.bs-btn-sm{
+    padding: 5px 15px;
+}
+
+.bs-btn-md{
+    padding: 10px 30px;
+}
+
+.bs-btn-lg{
+    padding: 20px 60px;
+}
+
+.bs-btn-xl{
+    padding: 30px 90px;
+}
+
+
+
+.bs-btn-lily{
+    background-color: var(--color-light-lily);
+    color: var(--color-dark-dark);
+}
+
+.bs-btn-rose{
+    background-color: var(--color-light-rose);
+    color:var(--color-light-light);
+}
+
+.bs-btn-iris{
+    background-color: var(--color-light-iris);
+    color:var(--color-light-light);
+}
+
+.bs-btn-daffodil{
+    background-color: var(--color-light-daffodil);
+    color:var(--color-dark-dark);
+}
+
+.bs-btn-daisy{
+    background-color: var(--color-light-daisy);
+    color:var(--color-light-light);
+}
+
+.bs-btn-cactus{
+    background-color: var(--color-light-cactus);
+    color:rgb(44, 44, 44)
+}
+
+.bs-btn-lily:hover{
+    background-color: var(--color-dark-lily);
+    color:var(--color-dark-dark);
+}
+
+.bs-btn-rose:hover{
+    background-color: var(--color-dark-rose);
+    color:var(--color-light-light);
+}
+
+.bs-btn-iris:hover{
+    background-color: var(--color-dark-iris);
+    color:var(--color-light-light);
+}
+
+.bs-btn-daffodil:hover{
+    background-color: var(--color-dark-daffodil);
+    color:var(--color-dark-dark);
+}
+
+.bs-btn-daisy:hover{
+    background-color: var(--color-dark-daisy);
+    color:var(--color-light-light);
+}
+
+.bs-btn-cactus:hover{
+    background-color: var(--color-dark-cactus);
+    color:var(--color-light-light);
+}
+
+
+
+
+/* form */
+.bs-form{
+
+}
+
+.bs-form input, .bs-form select, .bs-form button{
+    font-size: var(--size-font-lg);
+}
+
+.bs-input-text, .bs-input-select{
+    border-radius: 5px;
+    border:1px solid var(--color-dark-dark);
+}
+
+.bs-form-input-sm input, .bs-form-input-sm select{
+    width: var(--size-sm-wd);
+    height: var(--size-sm-he);
+}
+
+
+.bs-form-input-md input, .bs-form-input-md select{
+    width: var(--size-md-wd);
+    height: var(--size-md-he);
+}
+
+.bs-form-input-lg input, .bs-form-input-lg select{
+    width: var(--size-lg-wd);
+    height: var(--size-lg-he);
+}
+
+.bs-form-input-xl input, .bs-form-input-xl select{
+    width: var(--size-xl-wd);
+    height: var(--size-xl-he);
+}
+
+.bs-form-input-xxl input, .bs-form-input-xxl select{
+    width: var(--size-xxl-wd);
+    height: var(--size-xxl-he);
+}
+
+
+
+/* card */
+.bs-card{
+    padding: 10px 10px;
+    border-radius: 3px;
+    background-color: #00000000;
+}
+
+
+.bs-card-border{
+    border: 1px solid  var(--color-dark-dark);
+}
+
+
+
+
+
+/* table */
+.bs-table{
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: var(--size-xl-wd);
+}
+
+.bs-table-head thead, .bs-table-foot tfoot{
+    background-color: var(--color-head);
+}
+
+.bs-table-border{
+    border: 1px solid var(--color-light-dark);
+}
+
+.bs-table-border-all,
+.bs-table-border-all tr,
+.bs-table-border-all th,
+.bs-table-border-all td
+{
+    border: 1px solid var(--color-light-dark);
+}
+
+.bs-table-striped tbody tr:nth-child(odd) {
+    background-color: var(--color-striped);
+}
+
+.bs-table-hover tbody tr:hover , .bs-table-hover tbody tr:nth-child(odd):hover {
+    background-color: var(--color-hover);
+}
+
+
+
+
+
+
+/* background */
+.bs-bg-lily-light{
+    background-color: var(--color-light-lily);
+}
+
+.bs-bg-rose-light{
+    background-color: var(--color-light-rose);
+}
+
+.bs-bg-iris-light{
+    background-color: var(--color-light-iris);
+}
+
+.bs-bg-daffodil-light{
+    background-color: var(--color-light-daffodil);
+}
+
+.bs-bg-cactus-light{
+    background-color: var(--color-light-cactus);
+}
+
+.bs-bg-light-light{
+    background-color: var(--color-light-light);
+}
+
+.bs-bg-light-dark{
+    background-color: var(--color-light-dark);
+}
+
+
+.bs-bg-lily-dark{
+    background-color: var(--color-dark-lily);
+    color: var(--color-dark-dark);
+}
+
+.bs-bg-rose-dark{
+    background-color: var(--color-dark-rose);
+    color: var(--color-light-light);
+}
+
+.bs-bg-iris-dark{
+    background-color: var(--color-dark-iris);
+    color: var(--color-light-light);
+}
+
+.bs-bg-daffodil-dark{
+    background-color: var(--color-dark-daffodil);
+    color: var(--color-light-light);
+}
+
+.bs-bg-cactus-dark{
+    background-color: var(--color-dark-cactus);
+    color: var(--color-light-light);
+}
+
+.bs-bg-light-dark{
+    background-color: var(--color-light-dark);
+    color: var(--color-light-light);
+}
+
+.bs-bg-dark-dark{
+    background-color: var(--color-dark-dark);
+    color: var(--color-light-light);
+}
