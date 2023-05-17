@@ -60,6 +60,6 @@ bs-form-input-[size]
 <br>
 
 ### Card
-<U>bs-card<\U> <br>
+bs-card <br>
 Border : bs-card-border
 
