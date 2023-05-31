@@ -112,6 +112,7 @@ button, p, div, span{
     padding: 15px 45px;
     font-size: var(--size-font-lg);
     border:0px solid #00000000;
+    cursor:pointer;
 }
 
 .bs-button:active{
