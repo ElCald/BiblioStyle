@@ -7,14 +7,14 @@ Préfixe : bs-example
 bs-right, bs-center, bs-left, bs-middle
 
 ### Color
-light -> light <br>
-dark -> black <br>
-iris -> blue <br>
-lily -> white <br>
-rose -> red <br>
-daffodil -> yellow <br>
-daisy -> pink <br>
-cactus -> green
+light : light/grey <br>
+dark : black/grey <br>
+iris : blue <br>
+lily : white <br>
+rose : red <br>
+daffodil : yellow <br>
+daisy : pink <br>
+cactus : green
 
 ### Size
 xxxs : 1px 1% <br>
